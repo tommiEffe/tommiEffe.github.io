@@ -1,3 +1,4 @@
+/* Reset di base */
 * {
     margin: 0;
     padding: 0;
@@ -7,20 +8,27 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
 }
 
+/* Stile per l'intestazione */
 header {
-    background-color: #1d1f21;
+    background-color: #003399; /* Blu Serie A */
     padding: 1rem;
     text-align: center;
     color: white;
 }
 
+header h1 {
+    font-size: 2rem;
+    color: #f0c200; /* Oro */
+}
+
 header nav a {
-    margin: 0 1rem;
-    color: #d1d1d1;
+    margin: 0 1.5rem;
+    color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 header nav a:hover {
@@ -29,38 +37,65 @@ header nav a:hover {
 
 .main {
     padding: 2rem;
+    text-align: center;
 }
 
-.news-grid, .teams-section, .players-section {
-    display: flex;
-    gap: 1rem;
+.teams-section {
+    padding: 2rem;
+    text-align: center;
 }
 
-.card, .team, .player {
-    background: #fff;
+.teams-section h2 {
+    font-size: 2rem;
+    color: #003399;
+    margin-bottom: 2rem;
+}
+
+/* Griglia delle squadre */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem; /* Spazio tra gli elementi */
+    justify-items: center;
+}
+
+/* Stile per ogni team */
+.team {
+    background-color: #ffffff;
     border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.team:hover {
+    transform: translateY(-5px);
+}
+
+.team img {
+    width: 90px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.team p {
+    font-size: 1.1rem;
+    color: #003399; /* Colore blu per il testo */
+    font-weight: bold;
+}
+
+/* Stile per il footer */
+footer {
+    margin-top: 2rem;
     padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #003399;
+    color: white;
 }
 
-.contact-form label {
-    margin-top: 1rem;
-    display: block;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #f0c200;
-    color: #1d1f21;
-    border: none;
-    cursor: pointer;
+/* Stile per i contenuti di testo */
+.main p, .team p {
+    color: #003399;
+    line-height: 1.6;
 }

@@ -1,0 +1,127 @@
+/* Importazione Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.8; /* Migliora la leggibilità del testo */
+}
+
+/* Stile per l'intestazione */
+header {
+    background-color: #003399; /* Blu Serie A */
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #f0c200; /* Oro */
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+header nav a {
+    margin: 0 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+header nav a:hover {
+    color: #f0c200;
+}
+
+/* Stile per la sezione principale */
+.main, .teams-section, .footer-section {
+    padding: 3rem;
+    text-align: center;
+}
+
+.teams-section h2 {
+    font-size: 2.5rem;
+    color: #003399;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Griglia delle squadre */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2.5rem; /* Maggiore spazio tra le card */
+    justify-items: center;
+}
+
+/* Stile per ogni team */
+.team {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem; /* Maggiore padding per creare più spazio */
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.team:hover {
+    transform: translateY(-7px);
+}
+
+.team img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.team p {
+    font-size: 1.2rem;
+    color: #003399;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+/* Stile per il footer */
+footer {
+    margin-top: 3rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: #003399;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Miglioramento del layout generale */
+h2, h1, p {
+    margin-bottom: 1rem; /* Aggiunge spazio sotto ogni intestazione e paragrafo */
+}
+
+/* Spaziatura tra sezioni */
+section {
+    margin-bottom: 3rem;
+}
+
+.main p, .team p {
+    color: #003399;
+    line-height: 1.8;
+}
+
+/* Stile per il logo Serie A */
+.logo {
+    width: 100px; /* Dimensione del logo */
+    height: auto;
+    margin-right: 10px; /* Spazio tra il logo e il testo del titolo */
+    margin-left: 10px;
+    vertical-align: middle; /* Allinea verticalmente con il testo */
+}
+
+/* Stile per l'intestazione */
+header h1 {
+    font-size: 2.5rem;
+    color: #f0c200; /* Oro */
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center; /* Allinea il logo e il testo al centro verticalmente */
+    justify-content: center; /* Centra il contenuto nella pagina */
+}
